@@ -1,47 +1,68 @@
 ---
 name: RH Hidrolavados SL
-description: La nave de noche — asfalto mojado, cian como luz y un solo rojo para la acción.
+description: La nave de día — papel y chapa blanca, tinta marina, el cian como agua y un solo rojo para la acción.
 colors:
-  ink-990: "#04070c"
-  ink-950: "#060b12"
-  ink-900: "#090f18"
-  ink-850: "#0c1523"
-  ink-800: "#101c2d"
-  ink-750: "#152740"
-  ink-700: "#1b3251"
-  ink-600: "#24425f"
+  paper-000: "#ffffff"
+  paper-050: "#f7fafc"
+  paper-100: "#eef3f8"
+  paper-150: "#e7eef5"
+  paper-200: "#dde7f0"
+  paper-250: "#cfdce8"
+  paper-300: "#bdcedd"
+  paper-350: "#a4bacd"
+  ink-900: "#07182b"
+  ink-700: "#24405c"
+  ink-500: "#46617c"
+  ink-400: "#566d87"
+  slab-900: "#08192c"
+  slab-800: "#102943"
   agua-300: "#a8e8ff"
   agua-400: "#6fd6f7"
   agua-500: "#3bb4e5"
   agua-600: "#1e90c8"
   agua-700: "#11618c"
+  agua-800: "#0b4767"
   rh-400: "#ff5450"
   rh-500: "#e22b27"
   rh-600: "#bd1d1a"
-  sodio-300: "#ffd9a3"
-  sodio-400: "#ffb558"
-  paper-050: "#f2f7fb"
-  paper-200: "#cbdae7"
-  paper-400: "#93aabf"
-  paper-500: "#7c93a9"
-  verde-wa: "#1faf54"
-  panel-luz-alto: "#f6fafd"
-  panel-luz-bajo: "#dbe7f1"
-  tinta-panel: "#0b1421"
-  line: "rgba(150, 190, 225, 0.16)"
-  line-soft: "rgba(150, 190, 225, 0.09)"
-  line-strong: "rgba(150, 190, 225, 0.3)"
+  wa-500: "#1faf54"
+  wa-700: "#12793a"
+  line: "rgba(13, 40, 65, 0.14)"
+  line-soft: "rgba(13, 40, 65, 0.08)"
+  line-strong: "rgba(13, 40, 65, 0.28)"
+  velo-alto: "rgba(255, 255, 255, 0.98)"
+  velo-rotulo: "rgba(255, 255, 255, 0.93)"
+  velo-medio: "rgba(255, 255, 255, 0.92)"
+  velo-bajo: "rgba(255, 255, 255, 0.74)"
+  velo-papel: "rgba(247, 250, 252, 0.55)"
+  panel-tinta: "#dbe6f0"
+  panel-apoyo: "#a9bed1"
+  panel-unidad: "#9db3c8"
+  panel-sello: "#ff8b88"
+  pie-foto: "rgba(7, 24, 43, 0.94)"
+  sombra-base: "#091e33"
+  sombra-nav: "rgba(9, 30, 51, 0.5)"
+  ok-texto: "#0e6330"
+  blanco: "#ffffff"
+  negro-impresion: "#000000"
 typography:
   display:
     fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
-    fontSize: "clamp(2.7rem, 1.6rem + 5.2vw, 6rem)"
+    fontSize: "clamp(2.25rem, 1.35rem + 3.2vw, 4.35rem)"
     fontWeight: 800
-    lineHeight: 1.02
+    lineHeight: 1.03
     letterSpacing: "-0.035em"
     fontVariation: "'wdth' 122, 'wght' 800"
   headline:
     fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
     fontSize: "clamp(2.2rem, 1.6rem + 3vw, 4.2rem)"
+    fontWeight: 800
+    lineHeight: 1.02
+    letterSpacing: "-0.028em"
+    fontVariation: "'wdth' 118, 'wght' 800"
+  section:
+    fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
+    fontSize: "clamp(1.8rem, 1.5rem + 1.5vw, 2.85rem)"
     fontWeight: 800
     lineHeight: 1.02
     letterSpacing: "-0.028em"
@@ -53,6 +74,13 @@ typography:
     lineHeight: 1.02
     letterSpacing: "-0.022em"
     fontVariation: "'wdth' 118, 'wght' 800"
+  subtitle:
+    fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
+    fontSize: "clamp(1.18rem, 1.1rem + 0.4vw, 1.4rem)"
+    fontWeight: 700
+    lineHeight: 1.02
+    letterSpacing: "-0.015em"
+    fontVariation: "'wdth' 104, 'wght' 700"
   lead:
     fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
     fontSize: "clamp(1.18rem, 1.1rem + 0.4vw, 1.4rem)"
@@ -75,17 +103,49 @@ typography:
     fontVariation: "'wdth' 84, 'wght' 600"
   cifra:
     fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
-    fontSize: "clamp(1.5rem, 1.2rem + 1.1vw, 2.2rem)"
+    fontSize: "clamp(1.32rem, 1.1rem + 0.85vw, 1.85rem)"
     fontWeight: 800
     lineHeight: 1.1
     letterSpacing: "-0.03em"
     fontVariation: "'wdth' 116, 'wght' 800"
     fontFeature: "'tnum' 1"
+  hero-lead:
+    fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
+    fontSize: "clamp(1.02rem, 0.96rem + 0.34vw, 1.22rem)"
+    fontWeight: 400
+    lineHeight: 1.5
+  board-title:
+    fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
+    fontSize: "clamp(1.22rem, 1.05rem + 0.7vw, 1.7rem)"
+    fontWeight: 800
+    lineHeight: 1.02
+  quote:
+    fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
+    fontSize: "clamp(1.15rem, 1rem + 0.8vw, 1.6rem)"
+    fontWeight: 500
+    lineHeight: 1.42
+    letterSpacing: "-0.015em"
+    fontVariation: "'wdth' 104, 'wght' 500"
+  drawer-link:
+    fontFamily: "Archivo, Helvetica Neue, Segoe UI, Arial, sans-serif"
+    fontSize: "clamp(1.18rem, 2.5vh, 1.4rem)"
+    fontWeight: 700
+    lineHeight: 1.2
+    letterSpacing: "-0.02em"
+    fontVariation: "'wdth' 112, 'wght' 700"
+  micro:
+    t-1: "0.68rem"
+    t-2: "0.72rem"
+    t-3: "0.8rem"
+    t-4: "0.87rem"
+    t-5: "0.94rem"
+    t-6: "1.05rem"
 rounded:
   r-1: "2px"
   r-2: "4px"
   r-3: "10px"
   r-pill: "999px"
+  circulo: "50%"
 spacing:
   s-1: "0.25rem"
   s-2: "0.5rem"
@@ -99,138 +159,203 @@ spacing:
   s-10: "7.5rem"
   gut: "clamp(1.15rem, 4vw, 3.5rem)"
   shell: "1280px"
+  nav-h: "74px"
 components:
   button-rh:
     backgroundColor: "{colors.rh-500}"
-    textColor: "#ffffff"
+    textColor: "{colors.blanco}"
     rounded: "{rounded.r-2}"
     padding: "0.92rem 1.5rem"
     height: "50px"
   button-rh-hover:
-    backgroundColor: "{colors.rh-400}"
-    textColor: "#ffffff"
+    backgroundColor: "{colors.rh-600}"
+    textColor: "{colors.blanco}"
   button-agua:
     backgroundColor: "{colors.agua-500}"
-    textColor: "{colors.ink-990}"
+    textColor: "{colors.ink-900}"
     rounded: "{rounded.r-2}"
     padding: "0.92rem 1.5rem"
     height: "50px"
   button-agua-hover:
     backgroundColor: "{colors.agua-400}"
-    textColor: "{colors.ink-990}"
+    textColor: "{colors.ink-900}"
   button-ghost:
-    backgroundColor: "rgba(150, 190, 225, 0.05)"
-    textColor: "{colors.paper-050}"
+    backgroundColor: "{colors.paper-000}"
+    textColor: "{colors.ink-900}"
+    borderColor: "{colors.line-strong}"
     rounded: "{rounded.r-2}"
     padding: "0.92rem 1.5rem"
     height: "50px"
   button-ghost-hover:
-    backgroundColor: "rgba(150, 190, 225, 0.12)"
-    textColor: "#ffffff"
+    backgroundColor: "{colors.paper-000}"
+    textColor: "{colors.agua-800}"
+    borderColor: "{colors.agua-600}"
   button-wa:
-    backgroundColor: "{colors.verde-wa}"
-    textColor: "#ffffff"
+    backgroundColor: "{colors.wa-700}"
+    textColor: "{colors.blanco}"
     rounded: "{rounded.r-2}"
     padding: "0.92rem 1.5rem"
     height: "50px"
+  button-wa-hover:
+    backgroundColor: "{colors.wa-500}"
+    textColor: "{colors.blanco}"
   button-lg:
     padding: "1.08rem 1.9rem"
     height: "58px"
+  skip-link:
+    backgroundColor: "{colors.agua-700}"
+    textColor: "{colors.blanco}"
+  nav:
+    backgroundColor: "{colors.velo-medio}"
+    borderColor: "{colors.line-soft}"
+    height: "{spacing.nav-h}"
+  nav-stuck:
+    backgroundColor: "{colors.velo-alto}"
+    height: "62px"
+  nav-link:
+    textColor: "{colors.ink-500}"
+    typography: "{typography.micro.t-3}"
+  nav-link-hover:
+    textColor: "{colors.agua-800}"
   nav-tel:
     backgroundColor: "{colors.rh-500}"
-    textColor: "#ffffff"
+    textColor: "{colors.blanco}"
     rounded: "{rounded.r-2}"
     padding: "0.66rem 1.05rem"
   nav-icon:
-    backgroundColor: "rgba(150, 190, 225, 0.05)"
-    textColor: "{colors.paper-200}"
+    backgroundColor: "rgba(13, 40, 65, 0.045)"
+    textColor: "{colors.ink-700}"
     rounded: "{rounded.r-2}"
     size: "44px"
+  drawer:
+    backgroundColor: "{colors.paper-000}"
+    textColor: "{colors.ink-700}"
+  hero-board:
+    backgroundColor: "{colors.velo-rotulo}"
+    rounded: "{rounded.r-3}"
+    padding: "clamp(1.35rem, 3.2vh, 2.4rem) clamp(1.3rem, 3.4vw, 2.6rem) clamp(1.25rem, 2.8vh, 2rem)"
+    maxWidth: "52rem"
+  hero-kicker:
+    backgroundColor: "rgba(59, 180, 229, 0.1)"
+    textColor: "{colors.agua-800}"
+    borderColor: "rgba(30, 144, 200, 0.32)"
+    rounded: "{rounded.r-pill}"
+    padding: "0.42rem 0.9rem 0.42rem 0.6rem"
   field-input:
-    backgroundColor: "rgba(150, 190, 225, 0.05)"
-    textColor: "{colors.paper-050}"
+    backgroundColor: "{colors.paper-000}"
+    textColor: "{colors.ink-900}"
+    borderColor: "{colors.line-strong}"
     rounded: "{rounded.r-2}"
     padding: "0.82rem 0.95rem"
     height: "50px"
   field-input-focus:
-    backgroundColor: "rgba(59, 180, 229, 0.07)"
-    textColor: "{colors.paper-050}"
+    backgroundColor: "{colors.paper-000}"
+    borderColor: "{colors.agua-600}"
   field-label:
     typography: "{typography.label}"
-    textColor: "{colors.paper-400}"
+    textColor: "{colors.ink-500}"
+  field-error:
+    textColor: "{colors.rh-600}"
+    borderColor: "{colors.rh-500}"
+  form-status-ok:
+    backgroundColor: "rgba(31, 175, 84, 0.1)"
+    textColor: "{colors.ok-texto}"
+    borderColor: "rgba(18, 121, 58, 0.4)"
+  form-status-err:
+    backgroundColor: "rgba(226, 43, 39, 0.08)"
+    textColor: "{colors.rh-600}"
+    borderColor: "rgba(189, 29, 26, 0.4)"
   board-price:
-    textColor: "{colors.sodio-300}"
+    textColor: "{colors.agua-700}"
   pricepanel:
-    backgroundColor: "{colors.panel-luz-alto}"
-    textColor: "{colors.tinta-panel}"
+    backgroundColor: "{colors.slab-800}"
+    textColor: "{colors.panel-tinta}"
     rounded: "{rounded.r-3}"
     padding: "clamp(1.6rem, 4vw, 3rem)"
+  pricepanel-value:
+    textColor: "{colors.blanco}"
+  pricepanel-note:
+    textColor: "{colors.panel-apoyo}"
   pricepanel-stamp:
-    textColor: "{colors.rh-600}"
+    textColor: "{colors.panel-sello}"
+    borderColor: "{colors.panel-sello}"
     rounded: "{rounded.r-1}"
     padding: "0.25rem 0.6rem"
   chip-fleet:
-    backgroundColor: "rgba(150, 190, 225, 0.04)"
-    textColor: "{colors.paper-400}"
+    backgroundColor: "rgba(13, 40, 65, 0.04)"
+    textColor: "{colors.ink-500}"
+    borderColor: "{colors.line}"
     rounded: "{rounded.r-pill}"
     padding: "0.42rem 0.85rem"
   gallery-item:
-    backgroundColor: "{colors.ink-850}"
+    backgroundColor: "{colors.paper-200}"
     rounded: "{rounded.r-2}"
+  gallery-caption:
+    backgroundColor: "{colors.pie-foto}"
+    textColor: "#eef4f9"
+  viewer:
+    backgroundColor: "rgba(247, 250, 252, 0.96)"
+  viewer-btn:
+    backgroundColor: "{colors.paper-000}"
+    textColor: "{colors.ink-900}"
+    rounded: "{rounded.circulo}"
+    size: "48px"
   thumbbar-link:
-    backgroundColor: "rgba(6, 11, 18, 0.93)"
-    textColor: "{colors.paper-200}"
+    backgroundColor: "rgba(255, 255, 255, 0.95)"
+    textColor: "{colors.ink-700}"
     height: "58px"
+  foot:
+    backgroundColor: "{colors.paper-100}"
+    textColor: "{colors.ink-500}"
 ---
-
 # Design System: RH Hidrolavados SL
 
 ## Overview
 
-**Creative North Star: "La nave de noche: agua y luz"**
+**Creative North Star: "La nave de día: rótulo blanco y agua"**
 
-El sistema es la nave a las tres de la madrugada. El fondo no es "un tema oscuro": es asfalto mojado continuo (`ink-990`→`ink-800`) que no se interrumpe de una página a otra, y sobre el que la información aparece porque algo la ilumina, no porque tenga una caja alrededor. La fotografía real del cliente es el material principal —a sangre en portada, atenuada tras las cabeceras interiores, reflejada en el suelo dentro de los bloques— y todo lo demás es luz recortando lo que importa.
+El sistema es el rótulo real de la nave: azul marino sobre chapa blanca. El fondo no es "un tema claro": es papel continuo (`paper-050`) que no se interrumpe de una página a otra, y sobre el que la información aparece por peso de tinta y por reglas de 1px, no porque tenga una caja alrededor. La fotografía real del cliente sigue siendo el material principal —a sangre en portada bajo un velo de papel, atenuada tras las cabeceras interiores, reflejada en el suelo dentro de los bloques— y ahora hace de bloque oscuro que ancla el blanco en lugar de fundirse con él.
 
-El cian del logotipo (`agua-500`) funciona como fuente de luz: barras finas con halo, puntos de foco, filos de foco (`.nav__glow`), bordes de campo enfocado. No es un color de relleno de superficies. El rojo RH (`rh-500`) está reservado a una sola función —la acción: llamar, enviar, señalar la página activa— y por eso se lee sin esfuerzo. El ámbar de sodio (`sodio-300/400`), tomado de las lámparas del techo, sólo toca cifras y precios. La densidad es de taller: filas con reglas de 1px en lugar de tarjetas, tipografía condensada en las etiquetas técnicas y ensanchada en los titulares de chapa.
+El cian del logotipo (`agua-500`) funciona como agua: reglas, filos, el barrido del menú (`.nav__glow`), el borde del campo enfocado, la barra superior del rótulo. Como texto baja a `agua-700`/`agua-800`, que es donde el cian aguanta sobre blanco. No es un color de relleno de párrafo. El rojo RH (`rh-500`) está reservado a una sola función —la acción: llamar, enviar, señalar la página activa— y por eso se lee sin esfuerzo. Los precios del tablero van en `agua-700`: son agua, no alarma. La densidad es de taller: filas con reglas de 1px en lugar de tarjetas, tipografía condensada en las etiquetas técnicas y ensanchada en los titulares de chapa.
 
-Rechazo confirmado, escrito en el contrato de dirección de cada página: el lavadero azul celeste con burbujas y rejilla de tarjetas idénticas. Por eso los servicios se listan como un tablero de nave (`.board`), no como cards, y las tarifas viven en el único panel claro del sitio.
+Rechazo confirmado, escrito en el contrato de dirección de cada página: el lavadero azul celeste con burbujas y rejilla de tarjetas idénticas, y el degradado gris de plantilla corporativa. Por eso los servicios se listan como un tablero de nave (`.board`), no como cards, y las tarifas viven en la única superficie oscura del sitio, que por contraste se lee como una placa atornillada.
 
 **Key Characteristics:**
-- Suelo oscuro continuo; ninguna sección introduce un fondo claro salvo el panel de tarifas.
-- Cian = luz; rojo = acción; ámbar = cifra. Tres papeles, sin solapamiento.
+- Suelo de papel continuo; ninguna sección introduce un fondo oscuro salvo el panel de tarifas.
+- Cian = agua; rojo = acción; tinta marina = todo lo demás. Tres papeles, sin solapamiento.
 - Separación por reglas de 1px translúcidas (`line` / `line-soft` / `line-strong`), no por cajas.
-- Fotografía a sangre con degradados de atmósfera encima; reflejo en el suelo (`.puddle`).
+- Fotografía a sangre bajo velos de papel; el titular vive en su propio rótulo blanco (`.hero__board`); reflejo en el suelo (`.puddle`).
 - Una sola familia (Archivo variable) con dos voces por eje `wdth`.
 - Movimiento sólo en `opacity`, `transform` y `filter`; todo se anula bajo `prefers-reduced-motion`.
 
 ## Colors
 
-Paleta de una noche mojada: ocho grises azulados de asfalto, una luz cian, un rojo de señal, un ámbar de lámpara y cuatro tintas de papel frío.
+Paleta de un día en la nave: ocho blancos y grises azulados de chapa, cuatro tintas marinas de rótulo, un agua cian de seis pasos, un rojo de señal y una única pareja de azules profundos para la placa de tarifas.
 
 ### Primary
-- **Cian de agua a presión** (`agua-500`): la luz del sistema. Reglas iluminadas, halos, punto de la lista de servicios, borde de campo enfocado, foco móvil de la barra de navegación, `::selection`. `agua-400` es su forma de texto (enlaces, iconos, énfasis del titular); `agua-300` para etiquetas sobre foto; `agua-600/700` para degradados y bordes apagados.
+- **Cian de agua a presión** (`agua-500`): el agua del sistema. Reglas, punto de la lista de servicios, barra superior del rótulo, `::selection`, relleno de `.btn--agua`. Sobre blanco el cian claro no sostiene texto: la forma legible es `agua-700` (enlaces, etiquetas, énfasis del titular, precios) y `agua-800` para hover y foco. `agua-600` para bordes, iconos y degradados; `agua-300/400` sólo dentro de degradados y sobre superficie oscura.
 
 ### Secondary
-- **Rojo RH** (`rh-500`): la acción y sólo la acción — botón de teléfono, envío, punto de página activa, borde de campo inválido. `rh-400` es el estado hover y el texto de error; `rh-600` sólo dentro del panel claro (sello "IVA no incluido").
+- **Rojo RH** (`rh-500`): la acción y sólo la acción — botón de teléfono, envío, punto de página activa, borde de campo inválido. Sobre papel el hover **oscurece** a `rh-600`, nunca aclara a `rh-400`: aclarar sobre blanco es perder contraste. `rh-600` es además el texto de error y el rojo de la barra de pulgar. `rh-400` queda en reserva y sólo aparece, aclarado a `panel-sello`, dentro de la placa oscura de tarifas.
 
 ### Tertiary
-- **Ámbar de sodio** (`sodio-300` / `sodio-400`): luz de las lámparas del techo. Se usa exclusivamente en cifras de dinero (`.board__price`). Nunca en texto corrido ni en superficies.
-- **Verde WhatsApp** (`verde-wa`): color de marca ajeno, admitido sólo en el canal de WhatsApp (botón, icono de cabecera, segunda celda de la barra de pulgar) y en el estado de formulario correcto.
+- **Azul de placa** (`slab-800` → `slab-900`): la única superficie oscura del sitio, exclusiva del panel de tarifas. Su tinta interior es `panel-tinta`, con `blanco` para las cifras y `panel-apoyo` / `panel-unidad` para notas y unidades.
+- **Verde WhatsApp** (`wa-500` / `wa-700`): color de marca ajeno, admitido sólo en el canal de WhatsApp (botón, icono de cabecera, segunda celda de la barra de pulgar) y en el estado correcto del formulario. Sobre papel el botón usa `wa-700` y aclara a `wa-500` al pasar el ratón; el verde claro nunca sostiene texto.
 
 ### Neutral
-- **Asfalto mojado** (`ink-990` a `ink-600`): suelo del sitio. `ink-950` es el fondo del `body`, `ink-990` las secciones profundas y el pie, `ink-900` el punto medio del degradado "mojado", `ink-850` los huecos de imagen y mapa, `ink-600` los separadores tipográficos de migas.
-- **Papel frío** (`paper-050` a `paper-500`): `paper-050` para titulares y datos duros, `paper-200` para texto corrido, `paper-400` para texto secundario, `paper-500` para etiquetas y letra pequeña.
-- **Reglas** (`line`, `line-soft`, `line-strong`): azul claro translúcido, no gris. Toda la estructura del sitio se dibuja con ellas.
-- **Panel de luz** (`panel-luz-alto` → `panel-luz-bajo` sobre `tinta-panel`): la única superficie clara, exclusiva de las tarifas.
+- **Chapa y papel** (`paper-000` a `paper-350`): suelo del sitio. `paper-050` es el fondo del `body`, `paper-000` los campos, los botones fantasma y el visor, `paper-100` el pie y las secciones profundas, `paper-150` el punto medio del degradado "mojado", `paper-200` los huecos de imagen y mapa, `paper-350` los separadores tipográficos de migas.
+- **Tinta de rótulo** (`ink-900` a `ink-400`): `ink-900` para titulares y datos duros, `ink-700` para texto corrido, `ink-500` para texto secundario y etiquetas, `ink-400` para la letra más pequeña. Los cuatro pasan AA sobre `paper-050`; `ink-400` es el suelo de la escala y por debajo no hay nada.
+- **Reglas** (`line`, `line-soft`, `line-strong`): marino translúcido, no gris. Toda la estructura del sitio se dibuja con ellas.
+- **Velos** (`velo-alto`, `velo-medio`, `velo-bajo`, `velo-rotulo`, `velo-papel`): blancos con alfa. Son el mecanismo que convierte una fotografía en superficie legible — cabecera, rótulo de portada, cabeceras interiores y cierre— sin recortarla ni taparla del todo.
 
 ### Named Rules
-**La Regla de la Luz.** El cian se emite, no se pinta. Se admite como barra de 1px con halo, punto luminoso, filo, degradado de foco o borde de foco; no como fondo de una superficie de contenido. La única excepción viva es `.btn--agua`, un botón secundario que sí se rellena de `agua-500` porque tiene que competir con el rojo sin usarlo.
+**La Regla del Agua.** El cian corre, no se pinta. Se admite como regla, filo, barra superior del rótulo, degradado de foco o borde de campo enfocado; no como fondo de una superficie de contenido. La única excepción viva es `.btn--agua`, un botón secundario que sí se rellena de `agua-500` porque tiene que competir con el rojo sin usarlo, y que por eso lleva tinta `ink-900` encima y nunca blanco.
 
 **La Regla del Único Rojo.** `rh-500` marca la acción y nada más. Si un elemento rojo no se puede pulsar (o no señala dónde estás), está mal.
 
-**La Regla de la Cifra Ámbar.** El ámbar es dinero. Un precio puede ir en ámbar sobre oscuro o en `tinta-panel` dentro del panel claro; ningún otro contenido lleva ámbar.
+**La Regla del Hover que Oscurece.** Sobre papel, todo estado hover de una superficie de color baja en luminosidad, nunca sube: `rh-500`→`rh-600`, `agua-700`→`agua-800`, y las tintas de texto hacia `agua-800`. La única inversión permitida es `wa-700`→`wa-500`, porque el verde de WhatsApp arranca ya muy oscuro. Aclarar un botón sobre blanco es perder contraste, no ganar realce.
 
-**La Regla del Suelo Continuo.** El fondo nunca aclara para "separar" una sección. Las variantes son `--wet` (degradado `ink-950`→`ink-900`→`ink-950`) y `--deep` (`ink-990`), ambas dentro del asfalto.
+**La Regla del Suelo Continuo.** El fondo nunca oscurece para "separar" una sección. Las variantes son `--wet` (degradado `paper-050`→`paper-150`→`paper-050`) y `--deep` (`paper-100`), ambas dentro del papel. La única ruptura autorizada en todo el sitio es `.pricepanel`, y su valor está justamente en ser la única.
 
 ## Typography
 
@@ -279,7 +404,7 @@ Sistema híbrido pero asimétrico: la profundidad la crea la **luz** (degradados
 - **Desenfoque de cristal**: `.nav` (blur 16px + saturate 150%), `.thumbbar` (blur 14px), `.viewer` (blur 12px), `.hero__kicker` (blur 6px). El contenido pasa por debajo como tras un parabrisas mojado.
 
 ### Named Rules
-**La Regla del Halo.** Todo lo que emite luz lleva su propio halo del mismo color (`box-shadow` sin desplazamiento o con desplazamiento corto y difuminado ancho). Una fuente de luz sin halo se lee como un rectángulo de color y rompe el mundo.
+**La Regla del Velo.** Sobre papel no hay halos: sobre blanco un halo de color se ensucia y se lee como una mancha. Su equivalente aquí es el velo — un blanco con alfa (`velo-*`) que apoya el texto sobre una fotografía sin recortarla. Todo texto que caiga encima de una foto va sobre un velo, nunca desnudo con sombra de texto.
 
 ## Shapes
 
@@ -291,65 +416,65 @@ El borde no es un marco: es una regla. Casi todo se dibuja con `1px solid var(--
 
 ### Buttons
 - **Forma:** esquinas casi rectas (4px), altura mínima 50px (58px en `--lg`), relleno 0.92rem 1.5rem, icono SVG de 18px a la izquierda, `white-space: nowrap`.
-- **Primario `--rh`:** rojo RH sobre blanco con halo rojo e `inset` superior claro; hover pasa a `rh-400` y duplica el halo. Es el botón de llamar.
-- **Secundario `--agua`:** cian relleno con tinta `ink-990`; para la acción de navegación fuerte que no es el teléfono.
-- **Ghost:** velo azul al 5% con borde `line-strong`; hover sube al 12% y el borde vira a `agua-600`.
-- **WhatsApp `--wa`:** verde de canal, sólo para WhatsApp.
-- **Estados:** transición 0.22s con `--ease-out` en transform, fondo, sombra, borde y color; `:active` baja 1px. El foco se ve con el anillo global de 2px `agua-400` a 3px de distancia.
+- **Primario `--rh`:** rojo RH con texto blanco, sombra roja corta e `inset` superior claro; hover **oscurece** a `rh-600`. Es el botón de llamar.
+- **Secundario `--agua`:** cian relleno con tinta `ink-900`; para la acción de navegación fuerte que no es el teléfono. Nunca texto blanco encima.
+- **Ghost:** blanco `paper-000` con borde `line-strong` y `--shadow-1`; hover mantiene el blanco, sube a `--shadow-2` y vira borde y texto a `agua-600`/`agua-800`. Sobre papel se levanta, no se ilumina.
+- **WhatsApp `--wa`:** `wa-700` con texto blanco, sólo para WhatsApp; aclara a `wa-500` en hover (única inversión permitida).
+- **Estados:** transición 0.22s con `--ease-out` en transform, fondo, sombra, borde y color; `:active` baja 1px. El foco se ve con el anillo global de 2px `agua-700` a 3px de distancia.
 
 ### Chips
-- **`.fleet`**: píldora de contorno (`--r-pill`), fondo azul al 4%, texto `paper-400` en mayúsculas `wdth` 90. Sin estado seleccionado: es rotulación, no filtro.
-- **`.pricepanel__stamp`**: sello de contorno rojo `rh-600` girado -1.4°, radio 2px, dentro del panel claro.
+- **`.fleet`**: píldora de contorno (`--r-pill`), fondo marino al 4%, texto `ink-500` en mayúsculas `wdth` 90. Sin estado seleccionado: es rotulación, no filtro.
+- **`.pricepanel__stamp`**: sello de contorno `panel-sello` girado -1.4°, radio 2px, dentro de la placa oscura.
 
 ### Cards / Containers
 No hay tarjeta genérica. Los contenedores reales son:
-- **`.note`**: aviso con borde `line`, radio 10px y degradado cian al 9%→2%.
-- **`.mapframe`**: marco de 10px con `--shadow-2`, fondo `ink-850` y el iframe filtrado (grayscale 0.25, contraste 1.06, brillo 0.92) para que el mapa entre en la noche.
+- **`.note`**: aviso con borde `line`, radio 10px y degradado cian al 11%→3%.
+- **`.mapframe`**: marco de 10px con `--shadow-2`, fondo `paper-200` y el iframe apenas filtrado (grayscale 0.16, contraste 1.02) para bajarle el color de Google sin oscurecerlo.
 - **`.quote`**: sin caja; sólo filete izquierdo `agua-600`, texto `wdth` 104 / 500 a 34ch.
-- **`.dl`**: fichas de datos en filas con regla inferior; `dt` en voz de etiqueta a 180px, `dd` en `paper-050`.
+- **`.dl`**: fichas de datos en filas con regla inferior; `dt` en voz de etiqueta a 180px, `dd` en `ink-900`.
 - **`.docs`**: lista de documentos con reglas arriba y abajo, icono cian de 22px y desplazamiento de 8px a la derecha en hover.
 
 ### Inputs / Fields
-- **Estilo:** velo azul al 5%, borde `line` de 1px, radio 4px, alto mínimo 50px, texto `paper-050`, etiqueta encima en voz de etiqueta (`wdth` 84). El `select` lleva su chevron como SVG en `data:` teñido de `paper-400`; el `textarea` arranca en 132px y sólo escala en vertical.
-- **Hover:** el borde sube a `line-strong`.
-- **Foco:** borde `agua-500`, fondo cian al 7% y anillo de 3px `rgba(59,180,229,0.18)`; sin `outline` del navegador.
-- **Error (`.field.is-invalid`):** borde `rh-500`, anillo rojo de 3px al 16% y mensaje visible en `rh-400`; el asterisco de campo obligatorio también es `rh-400`. La validación limpia el error al primer `input`/`change`.
-- **Estado de envío:** `.formstatus.is-ok` en verde al 13% con texto `#8ef0b2`; `.is-err` en rojo al 12% con texto `#ffa8a5`.
+- **Estilo:** blanco `paper-000`, borde `line-strong` de 1px, radio 4px, alto mínimo 50px, texto `ink-900`, etiqueta encima en voz de etiqueta (`wdth` 84). El tamaño es exactamente 16px para que iOS no haga zoom al enfocar. El `select` lleva su chevron como SVG en `data:` teñido de `ink-500`; el `textarea` arranca en 132px y sólo escala en vertical.
+- **Hover:** el borde vira a `agua-600`.
+- **Foco:** borde `agua-600`, fondo blanco y anillo de 3px `rgba(59,180,229,0.26)`; sin `outline` del navegador.
+- **Error (`.field.is-invalid`):** borde `rh-500`, anillo rojo de 3px al 18% y mensaje visible en `rh-600`; el asterisco de campo obligatorio también es `rh-600`. La validación limpia el error al primer `input`/`change`.
+- **Estado de envío:** `.formstatus.is-ok` en verde al 10% con texto `ok-texto`; `.is-err` en rojo al 8% con texto `rh-600`.
 - **Consentimiento:** casilla nativa de 20px con `accent-color: agua-500`.
 
 ### Navigation
-- **Cabecera `.nav`:** fija, degradado de negro al 86%→62% con desenfoque de 16px y saturación 150%; al pasar 8px de scroll toma la clase `is-stuck`, opaca más el fondo, enciende un filete cian bajo el borde y encoge el logotipo al 83%. **Decisión deliberada:** en ese mismo estado la altura interior pasa de 74px a 62px. Es una transición de layout, aceptada porque ocurre una sola vez por estado de scroll sobre un elemento fijo sin hermanos que reflujan; resolverla con `transform` deformaría el contenido de la barra.
-- **Enlaces:** mayúsculas `wdth` 92 / 600 a 0.79rem con tracking 0.13em, `paper-400` → `paper-050` en hover; la página activa añade un punto rojo de 4px con halo.
-- **`.nav__glow`:** caja de 100px que persigue al puntero por el menú **sólo con `translate3d` y `scaleX`** (cero reflujo), degradado cian vertical con halo; aparece con `:hover`/`:focus-within` del menú.
-- **`.nav__progress`:** filete de 2px al pie de la barra, degradado `agua-600`→`agua-400`, animado por `scaleX` según el scroll.
-- **Móvil:** hamburguesa de 48px que se transforma en aspa; el panel `.drawer` baja a pantalla completa como el cierre de la nave (`translateY(-100%)`→0 en 0.52s), con textura grecada al 35%, enlaces de 1.18–1.55rem en `wdth` 112 que se desplazan 7px en hover, entrada escalonada de 45ms por elemento (`--i`), y pie con los tres botones a bloque completo.
+- **Cabecera `.nav`:** fija, degradado de blanco al 92%→74% con desenfoque de 16px y saturación 150%; al pasar 8px de scroll toma la clase `is-stuck`, sube al 98%→94%, enciende un filete cian bajo el borde y encoge el logotipo al 83%. **Decisión deliberada:** en ese mismo estado la altura interior pasa de 74px a 62px. Es una transición de layout, aceptada porque ocurre una sola vez por estado de scroll sobre un elemento fijo sin hermanos que reflujan; resolverla con `transform` deformaría el contenido de la barra.
+- **Enlaces:** mayúsculas `wdth` 92 / 600 a `t-3` con tracking 0.13em, `ink-500` → `agua-800` en hover; la página activa añade un punto rojo de 4px, sin halo.
+- **`.nav__glow`:** caja de 100px que persigue al puntero por el menú **sólo con `translate3d` y `scaleX`** (cero reflujo), degradado cian vertical que concentra el color en el filo inferior —una lámina de agua bajo el enlace, no un resplandor—; aparece con `:hover`/`:focus-within` del menú.
+- **`.nav__progress`:** filete de 2px al pie de la barra, degradado `agua-700`→`agua-500`, animado por `scaleX` según el scroll.
+- **Móvil:** hamburguesa de 48px que se transforma en aspa; el panel `.drawer` baja a pantalla completa como el cierre de la nave (`translateY(-100%)`→0 en 0.52s), sobre blanco con textura grecada al 60%, enlaces de 1.18–1.4rem en `wdth` 112 que se desplazan 7px en hover, entrada escalonada de 45ms por elemento (`--i`), y pie con los tres botones a bloque completo.
 
 ### Barra de pulgar (`.thumbbar`)
-Componente firma. Tres celdas iguales fijas al fondo (llamar en `rh-400`, WhatsApp en verde, ruta en `paper-200`), fondo casi negro con desenfoque de 14px, borde superior de regla, alto mínimo 58px por celda y rótulos de etiqueta a 0.68rem. Entra deslizando (`translateY(110%)`→0) al superar 240px de scroll y desaparece a partir de 1060px.
+Componente firma. Tres celdas iguales fijas al fondo (llamar en `rh-600`, WhatsApp en `wa-700`, ruta en `ink-700`), fondo blanco al 95% con desenfoque de 14px, borde superior de regla, alto mínimo 58px por celda y rótulos de etiqueta a `t-1`. Entra deslizando (`translateY(110%)`→0) al superar 240px de scroll y desaparece a partir de 1060px.
 
 ### Portada (`.hero`)
-Alto de viewport completo (`100svh`), foto a sangre en `z-index: -2` con deriva lenta de 26s (escala 1.08→1.15) y encima dos radiales de atmósfera —ámbar arriba a la derecha, cian abajo a la izquierda— más un degradado vertical que devuelve el pie de la imagen a `ink-950`. El contenido se alinea abajo a la izquierda: kicker en píldora con punto cian pulsante, titular display, entradilla a 46ch, fila de botones (rojo + ghost) y franja de cifras separada por una regla superior. Los hijos de `.hero__inner` entran escalonados con `liftIn` (0.95s, desplazamiento de 26px y desenfoque de 9px).
+Alto de viewport completo (`100svh`), fotografía **de día** a sangre en `z-index: -2` con deriva lenta de 26s (escala 1.08→1.15), un radial cian arriba a la derecha y un velo vertical suave que devuelve el pie de la imagen a `paper-050`. El velo es deliberadamente flojo (34%→10%→55%) porque el texto ya no depende de él: el contenido vive dentro de **`.hero__board`**, un rótulo de chapa blanca (`velo-rotulo`, desenfoque de 14px, radio 10px, `--shadow-3`, máximo 52rem) con una barra de agua de 3px cosida al borde superior. Es el letrero real de la nave, y es lo que permite que la foto se vea alrededor en vez de quedar lavada. Dentro: kicker en píldora con punto cian pulsante, titular display, entradilla, fila de botones (rojo + ghost) y franja de cifras separada por una regla superior. El rótulo entra con `liftIn` y sus hijos escalonados detrás (0.18s→0.52s). Por debajo de 620px las cifras pasan a dos columnas, los botones se aprietan a una sola fila y el número desaparece de la etiqueta de llamada (`.btn__num`) para que el rótulo entre en pantalla.
 
 ### Cabecera interior (`.pagehead`)
-Misma gramática en versión corta: foto al 42% de opacidad, radial cian arriba a la derecha, migas en voz de etiqueta, `h1` a 18ch y entradilla a 58ch, cerrada por una regla suave.
+Misma gramática en versión corta: foto al 50% de opacidad bajo un velo de papel al 90%→82%, radial cian arriba a la derecha, migas en voz de etiqueta, `h1` a 18ch y entradilla a 58ch, cerrada por una regla suave.
 
 ### Tablero de servicios (`.board`)
-Sustituto explícito de la rejilla de tarjetas. Filas con regla arriba y abajo; el `h3` lleva delante un punto cian de 9px con halo; la descripción va en `paper-400` a 58ch; el precio, en ámbar `sodio-300` con `tnum` y un `small` en voz de etiqueta ("desde"). En hover, un barrido cian al 7% entra por la izquierda desbordando 1.2rem el ancho de la fila. A partir de 760px el precio ocupa su columna de 150px alineado a la derecha.
+Sustituto explícito de la rejilla de tarjetas. Filas con regla arriba y abajo; el `h3` lleva delante un punto cian de 9px con anillo de 3px; la descripción va en `ink-500` a 58ch; el precio, en `agua-700` con `tnum` y un `small` en voz de etiqueta ("desde"). En hover, un barrido cian al 13% entra por la izquierda desbordando 1.2rem el ancho de la fila. A partir de 760px el precio ocupa su columna de 150px alineado a la derecha.
 
 ### Bloque foto/texto (`.slab`) y charco (`.puddle`)
-Dos columnas 1.05fr/1fr desde 900px, alternables con `--flip`. La fotografía lleva radio de 10px, borde de regla y `--shadow-3`; debajo, un pseudo-elemento hereda la imagen (el JS copia el `src` a `background-image`), la voltea en vertical, la difumina 7px, la enmascara con un degradado y la deja al 50% de opacidad: el reflejo en el suelo mojado. `--none` desactiva el reflejo cuando el bloque va pegado a otra sección.
+Dos columnas 1.05fr/1fr desde 900px, alternables con `--flip`. La fotografía lleva radio de 10px, borde de regla y `--shadow-3`; debajo, un pseudo-elemento hereda la imagen (el JS copia el `src` a `background-image`), la voltea en vertical, la difumina 8px, la enmascara con un degradado y la deja al 34% de opacidad —más tenue que sobre fondo oscuro, porque el papel no perdona—, con un tope de 92px para que el charco nunca alcance la sección siguiente: el reflejo en el suelo mojado. `--none` desactiva el reflejo cuando el bloque va pegado a otra sección.
 
 ### Galería y visor
-Rejilla `auto-fill` de mínimo 260px con hueco fluido; piezas en 4:3 (la primera, 4:5 a doble alto en escritorio), radio 4px, borde de regla, imagen ligeramente desaturada que se acerca al 106% y recupera color en hover/foco, y pie que sube 6px al aparecer. Cada pieza es un `role="button"` con `tabindex`. El visor cubre la pantalla con negro al 94% y desenfoque de 12px, muestra la imagen a 82vh con `--shadow-3` entrando de escala 0.96 a 1, con botones circulares de 48px, pie con posición "n / total", cierre con Escape o clic en el fondo, flechas de teclado y deslizamiento táctil de 48px.
+Rejilla `auto-fill` de mínimo 260px con hueco fluido; piezas en 4:3 (la primera, 4:5 a doble alto en escritorio), radio 4px, borde de regla, imagen apenas desaturada que se acerca al 106% y gana color en hover/foco, y pie que sube 6px al aparecer. El pie es la única pieza del sitio que conserva tinta clara sobre fondo oscuro, porque va encima de la fotografía. Cada pieza es un `role="button"` con `tabindex`. El visor cubre la pantalla con papel al 96% y desenfoque de 12px —la foto pasa a ser el objeto oscuro sobre la mesa—, con botones blancos que viran a cian al pasar el ratón, muestra la imagen a 82vh con `--shadow-3` entrando de escala 0.96 a 1, con botones circulares de 48px, pie con posición "n / total", cierre con Escape o clic en el fondo, flechas de teclado y deslizamiento táctil de 48px.
 
 ### Panel de tarifas (`.pricepanel` / `.pricelist`)
-La única superficie clara del sitio: degradado `panel-luz-alto`→`panel-luz-bajo` sobre tinta `tinta-panel`, radio 10px, `--shadow-3` con `inset` blanco y borde blanco al 70%. Cabecera con regla inferior de 2px sólida y sello rojo girado. Cada línea es nombre + filete punteado elástico + valor con `tnum`, con el prefijo "desde" en versalitas `wdth` 88. Es una hoja de precios impresa clavada en la pared, no una tabla web.
+La única superficie **oscura** del sitio: degradado `slab-800`→`slab-900` con tinta `panel-tinta`, cifras en blanco, radio 10px y `--shadow-3`. Cabecera con regla inferior de 2px y sello `panel-sello` girado. Cada línea es nombre + filete punteado elástico + valor con `tnum`, con el prefijo "desde" en versalitas `wdth` 88. Es una placa de precios atornillada a la pared, no una tabla web; y funciona precisamente porque en todo el sitio no hay otra cosa oscura con la que confundirse.
 
 ### Cierre (`.closer`) y pie (`.foot`)
-El cierre repite la puesta en escena fotográfica al 50% de opacidad con radial oscuro a la izquierda para sostener el texto: `h2` a 16ch, párrafo a 48ch y botones de acción. El pie es `ink-990` con regla superior, rejilla de 1→3→4 columnas, cabeceras en voz de etiqueta a 0.73rem, mini-mapa que recupera color y brillo en hover, y barra legal final separada por regla suave.
+El cierre repite la puesta en escena fotográfica al 55% de opacidad con un radial de papel al 97% a la izquierda para sostener el texto: `h2` a 16ch, párrafo a 48ch y botones de acción. El pie es `paper-100` con regla superior, rejilla de 1→3→4 columnas, cabeceras en voz de etiqueta a 0.73rem, mini-mapa que recupera color y brillo en hover, y barra legal final separada por regla suave.
 
 ### Reglas de luz y chapa (`.lightline`, `.grecada`)
-Utilidades del mundo: `.lightline` es una regla de 1px cuyo degradado va de transparente a `agua-400` en el centro con halo de 14px al 55% de opacidad; `.grecada` es una banda de 8px con la textura `--grecada` al 50%. Están definidas en el sistema y son la forma canónica de separar sin borde, pero **la construcción actual no las instancia en ninguna página**: hoy el papel de "regla de luz" lo cumplen la barra con halo de `.label::before`, el filete cian de `.nav::after` y las reglas de 1px de `line`. Úsalas cuando haga falta una separación iluminada explícita; no inventes otra.
+Utilidades del mundo: `.lightline` es una regla de 2px cuyo degradado va de transparente a `agua-500` en el centro, sin halo, porque sobre papel el halo ensucia; `.grecada` es una banda de 8px con la textura `--grecada` al 85%. Están definidas en el sistema y son la forma canónica de separar sin borde, pero **la construcción actual no las instancia en ninguna página**: hoy el papel de "regla de agua" lo cumplen la barra de `.label::before`, la barra superior de `.hero__board`, el filete cian de `.nav::after` y las reglas de 1px de `line`. Úsalas cuando haga falta una separación iluminada explícita; no inventes otra.
 
 ### Movimiento
 Dos curvas: `--ease-out` (`cubic-bezier(0.16, 1, 0.3, 1)`) para todo lo que entra o reacciona, y `--ease-in-out` (`cubic-bezier(0.65, 0, 0.35, 1)`) para lo que respira en bucle (deriva de la portada, pulso del punto). Las apariciones al scroll (`[data-reveal]`) sólo se ocultan si el documento tiene la clase `js`, entran con opacidad + 22px de subida + desenfoque de 6px en 0.75–0.85s, admiten retardos de 0.08/0.16/0.24s, se observan con `IntersectionObserver` y tienen red de seguridad a los 4s. Bajo `prefers-reduced-motion` todas las animaciones y transiciones caen a 0.001ms, el contenido revelado se muestra y la portada se congela en escala 1.04.
@@ -357,13 +482,13 @@ Dos curvas: `--ease-out` (`cubic-bezier(0.16, 1, 0.3, 1)`) para todo lo que entr
 ## Do's and Don'ts
 
 ### Do:
-- **Do** mantener el suelo continuo: fondos dentro del rango `ink-990`–`ink-800`, con `.section--wet` o `.section--deep` para variar.
-- **Do** usar el cian como luz —barra con halo, punto, filo, borde de foco— y darle siempre su halo del mismo color.
+- **Do** mantener el suelo continuo: fondos dentro del rango `paper-000`–`paper-200`, con `.section--wet` o `.section--deep` para variar.
+- **Do** usar el cian como agua —regla, punto, filo, borde de foco— y bajarlo a `agua-700`/`agua-800` en cuanto sea texto.
 - **Do** reservar `rh-500` para la acción y el indicador de página activa.
-- **Do** poner los precios y las cifras en `sodio-300`/`sodio-400` con `font-feature-settings: "tnum" 1`.
+- **Do** poner los precios en `agua-700` y las cifras grandes en `ink-900`, siempre con `font-feature-settings: "tnum" 1`.
 - **Do** separar con reglas de 1px (`line`, `line-soft`, `line-strong`) y componer listas y tableros en filas.
 - **Do** aplicar las dos voces del eje `wdth`: 118–122/800 para titulares, 84–92/600 en mayúsculas y tracking ≥0.12em para etiquetas.
-- **Do** reflejar toda fotografía de bloque con `.puddle`, y montar las fotos a sangre con radiales de atmósfera y degradado de cierre hacia `ink-950`.
+- **Do** reflejar toda fotografía de bloque con `.puddle`, y apoyar cualquier texto que caiga sobre una foto en un velo (`velo-*`) o en un rótulo blanco, nunca en una sombra de texto.
 - **Do** animar sólo `opacity`, `transform` y `filter`, con `--ease-out`, y comprobar el resultado bajo `prefers-reduced-motion`.
 - **Do** garantizar que llamar, WhatsApp y ruta estén siempre accesibles en móvil por la barra de pulgar.
 
@@ -372,8 +497,9 @@ Dos curvas: `--ease-out` (`cubic-bezier(0.16, 1, 0.3, 1)`) para todo lo que entr
 - **Don't** usar rojo en nada que no se pueda pulsar.
 - **Don't** introducir una segunda familia tipográfica: el contraste lo produce el eje `wdth` de Archivo.
 - **Don't** montar rejillas de tarjetas iguales para los servicios ni añadir burbujas, gotas decorativas o azul celeste de lavadero.
-- **Don't** crear más superficies claras: el panel de tarifas es la única, y su blancura es lo que la convierte en hoja de precios.
+- **Don't** crear más superficies oscuras: la placa de tarifas es la única, y su oscuridad es lo que la convierte en hoja de precios.
 - **Don't** subir los radios: nada por encima de 10px salvo píldoras de texto y círculos de luz.
-- **Don't** poner sombra a superficies planas de contenido; la sombra es para lo que se levanta del suelo (foto, panel, visor, mapa).
+- **Don't** poner sombra a superficies planas de contenido; la sombra es para lo que se levanta del papel (foto, rótulo de portada, placa de tarifas, visor, mapa).
+- **Don't** aclarar un color al pasar el ratón: sobre papel el hover oscurece.
 - **Don't** animar `width`, `top`, `left` ni `margin`; la única transición de layout del sistema es la compresión de la cabecera, y está justificada arriba.
 - **Don't** ocultar contenido con `[data-reveal]` sin que exista la red de seguridad: sin JavaScript el contenido debe verse.
