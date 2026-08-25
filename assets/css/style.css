@@ -1158,6 +1158,33 @@ body.is-locked { overflow: hidden; }
 .dl dd { margin: 0; color: var(--ink-900); font-variation-settings: "wdth" 100, "wght" 500; }
 .dl dd a { color: var(--agua-700); }
 
+/* Direccion: lleva a la ficha del sitio en Google Maps.
+   Sin subrayado permanente —una direccion de tres lineas subrayada es ruido—;
+   el alfiler cian es la senal, y no depende del color para leerse. */
+.dirlink {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--r-1);
+  transition: color 0.2s var(--ease-out);
+}
+.dirlink svg {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  margin-top: 0.22em;
+  color: var(--agua-700);
+  transition: transform 0.25s var(--ease-out);
+}
+.dirlink:hover,
+.dirlink:focus-visible { color: var(--agua-800); }
+.dirlink:hover span { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.dirlink:hover svg { transform: translateY(-2px); }
+.dl .dirlink svg { color: var(--agua-700); }
+.foot .dirlink:hover { color: var(--agua-800); }
+
 /* Nota destacada */
 .note {
   border: 1px solid var(--line);

@@ -23,6 +23,7 @@ const EMPRESA = {
   calle: "Calle Empleo nº 17",
   poligono: "Polígono Industrial «Los Olivos» (N-IV)",
   cp: "28906 Getafe (Madrid)",
+  maps: "https://www.google.com/maps/search/?api=1&query=RH%20Hidrolavados%20SL%2C%20Calle%20Empleo%2017%2C%2028906%20Getafe%2C%20Madrid",
   ruta: "https://www.google.es/maps/dir//RH+Hidrolavados,+Calle+Empleo,+17,+28906+Getafe,+Madrid/@40.3152936,-3.7203789,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd4221409a3f853f:0x2fa6f8bcc1fb5c96!2m2!1d-3.6853595!2d40.3152334!3e0",
   mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.221678429144!2d-3.6875481842621007!3d40.315237469729155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4221409a3f853f%3A0x2fa6f8bcc1fb5c96!2sRH+Hidrolavados!5e0!3m2!1ses!2ses!4v1518694922382",
   base: "https://lavadoyengraserhhidrolavado.es",
@@ -145,8 +146,7 @@ const navbar = (active) => `
     <a class="btn btn--wa btn--lg btn--block" href="https://wa.me/${EMPRESA.wa}" target="_blank" rel="noopener">${ico.wa} WhatsApp ${EMPRESA.tel2fmt}</a>
     <a class="btn btn--ghost btn--lg btn--block" href="${EMPRESA.ruta}" target="_blank" rel="noopener">${ico.pin} Cómo llegar</a>
     <p class="drawer__meta">
-      <strong>${EMPRESA.calle}</strong>
-      ${EMPRESA.poligono}<br>${EMPRESA.cp}<br>
+      <a class="dirlink" href="${EMPRESA.maps}" target="_blank" rel="noopener" aria-label="Ver la dirección de RH Hidrolavados en Google Maps">${ico.pin}<span><strong>${EMPRESA.calle}</strong>${EMPRESA.poligono}<br>${EMPRESA.cp}</span></a>
       <a href="mailto:${EMPRESA.email}">${EMPRESA.email}</a><br>
       L–V 8:00–18:30 · S 8:00–12:00
     </p>
@@ -208,7 +208,7 @@ const footer = `
 
       <div>
         <h2>Dónde estamos</h2>
-        <p>${EMPRESA.calle}<br>${EMPRESA.poligono}<br>${EMPRESA.cp}</p>
+        <p><a class="dirlink" href="${EMPRESA.maps}" target="_blank" rel="noopener" aria-label="Ver la dirección de RH Hidrolavados en Google Maps">${ico.pin}<span>${EMPRESA.calle}<br>${EMPRESA.poligono}<br>${EMPRESA.cp}</span></a></p>
         <a class="foot__map" href="${EMPRESA.ruta}" target="_blank" rel="noopener" aria-label="Abrir la ruta hasta RH Hidrolavados en Google Maps">
           <img src="assets/img/situacion_empresa.jpg" alt="Plano de situación de RH Hidrolavados en el Polígono Los Olivos de Getafe" width="500" height="500" loading="lazy">
         </a>
@@ -859,7 +859,7 @@ ${pagehead("imgRH_5.jpg", "Contacto", "Llámanos, escríbenos o preséntate.", "
           </div>
           <div>
             <dt>Dirección</dt>
-            <dd>${EMPRESA.calle}<br>${EMPRESA.poligono}<br>${EMPRESA.cp}</dd>
+            <dd><a class="dirlink" href="${EMPRESA.maps}" target="_blank" rel="noopener" aria-label="Ver la dirección de RH Hidrolavados en Google Maps">${ico.pin}<span>${EMPRESA.calle}<br>${EMPRESA.poligono}<br>${EMPRESA.cp}</span></a></dd>
           </div>
           <div>
             <dt>Horario</dt>
